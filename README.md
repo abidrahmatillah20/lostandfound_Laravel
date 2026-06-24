@@ -1,59 +1,107 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+ Lost and Found System (Laravel)
+     Nama: M Abid Rahmatillah
+     NPM: 2408107010090
+     Mata Kuliah: Pemrograman Berbasis Web
+ 
+ Deskripsi Proyek
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Lost and Found System adalah aplikasi berbasis web yang dibangun menggunakan Laravel untuk membantu pengguna melaporkan dan mencari barang hilang maupun barang temuan di lingkungan tertentu (kampus/umum)
 
-## About Laravel
+Sistem ini memungkinkan pengguna untuk:
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Melaporkan barang hilang
+Melaporkan barang temuan
+Melihat daftar barang
+Mengelola data barang (admin)
+Autentikasi pengguna (login & register)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+  Tujuan Sistem
+Mempermudah proses pelaporan barang hilang dan ditemukan
+Meningkatkan efisiensi pencarian barang
+Menyediakan sistem terpusat untuk manajemen data barang
+Mengimplementasikan konsep CRUD dan autentikasi dalam Laravel
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+ Teknologi yang Digunakan
+Laravel (PHP Framework)
+MySQL / MariaDB
+Blade Template Engine
+Tailwind CSS
+Vite
+Node.js & NPM
+ 
+  Fitur Aplikasi
+  User
+Registrasi & Login
+Melihat daftar barang hilang/temuan
+Melihat detail barang
+Menambahkan laporan barang
 
-## Learning Laravel
+  Admin
+Dashboard admin
+Manajemen data barang
+Manajemen kategori
+Monitoring laporan user
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+ Struktur Fitur Utama
+Authentication (Login, Register, Logout)
+CRUD Items (Barang Hilang & Temuan)
+CRUD Categories
+Role-based access (Admin & User)
+Public landing page
+ 
+  Cara Menjalankan Project
+1. Clone Repository
+git clone https://github.com/abidrahmatillah20/lostandfound_Laravel.git
+2. Masuk Folder Project
+cd lostandfound_Laravel
+3. Install Dependency PHP
+composer install
+4. Install Dependency Frontend
+npm install
+npm run dev
+5. Setup Environment
+cp .env.example .env
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Lalu sesuaikan konfigurasi database:
 
-## Laravel Sponsors
+DB_DATABASE=nama_database_kamu
+DB_USERNAME=root
+DB_PASSWORD=
+6. Generate Key
+php artisan key:generate
+7. Migrasi Database
+php artisan migrate
+8. Jalankan Server
+php artisan serve
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Akses di:
 
-### Premium Partners
+http://127.0.0.1:8000
+  Database
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Database menggunakan migration Laravel:
 
-## Contributing
+users
+categories
+items
+cache & jobs (default Laravel)
+  Role Sistem
+Role	Akses
+User	Melihat & membuat laporan barang
+Admin	Mengelola semua data sistem
+  Preview Aplikasi
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+(Tambahkan screenshot aplikasi di sini jika diperlukan untuk nilai lebih tinggi)
 
-## Code of Conduct
+  Demo Video
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Link video demo:
 
-## Security Vulnerabilities
+(isi link Google Drive / YouTube kamu di sini)
+📌 Catatan
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Project ini dibuat sebagai tugas UAS Pemrograman Berbasis Web dengan implementasi full-stack menggunakan Laravel
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Terima kasih telah menggunakan aplikasi ini
+Semoga sistem ini dapat membantu dalam pengelolaan barang hilang dan ditemukan secara lebih efektif dan efisien
