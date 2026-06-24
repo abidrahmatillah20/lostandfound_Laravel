@@ -59,6 +59,8 @@ Sistem ini memungkinkan pengguna untuk:
 - Role-based access (Admin dan User)  
 - Public landing page  
 
+## link Video Youtube
+https://youtu.be/7j3cy_APsPs
 
 ## Cara Menjalankan Project
 
